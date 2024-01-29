@@ -1,14 +1,13 @@
 import Heading from "@/components/Heading";
 import ShareLinkButton from "@/components/ShareLinkButton";
 
-import { getReview, getSlugs } from "@/lib/reviews";
+import { getReview } from "@/lib/reviews";
 
-
-export async function generateStaticParams() {
+/* export async function generateStaticParams() {
   const slugs = await getSlugs()
   const slugArr = slugs.map(slug => ({ slug }));
   return slugArr
-}
+}*/
 
 
 export async function generateMetadata({ params: { slug } }) {
