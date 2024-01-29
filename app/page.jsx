@@ -17,7 +17,7 @@ export default async function HomePage() {
       <p className="pb-3">Only the best indie games, reviewed for you.</p>
       <div className="bg-white border shadow-md rounded hover:shadow-xl w-80 sm:w-full">
         <Link href={`/reviews/${review.slug}`} className="hover:underline flex flex-col sm:flex-row">
-          <Image src={review.image} width={320} height={180} alt=""
+          <img src={review.image} width={320} height={180} alt=""
             className='rounded-t sm:rounded-l sm:rounded-none' />
           <h2 className="text-center py-1 font-orbitron font-semibold sm:px-2">
             {review.title}

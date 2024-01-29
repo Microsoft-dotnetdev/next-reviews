@@ -1,7 +1,5 @@
 import Heading from "@/components/Heading";
-import ReviewCard from "@/components/ReviewCard";
 import { getReviews } from "@/lib/reviews";
-import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
@@ -19,7 +17,7 @@ export default async function ReviewsPage() {
             <li key={index}>
               <div className="bg-white border shadow-md roundedhover:shadow-xl w-80">
                 <Link href={`/reviews/${review.slug}`} className="hover:underline">
-                  <Image src={review.image} width={320} height={180} alt=""
+                  <img src={review.image} width={320} height={180} alt=""
                     className='rounded-t sm:rounded-l sm:rounded-none' />
                   <h2 className="text-center py-1 font-orbitron font-semibold sm:px-2">
                     {review.title}
